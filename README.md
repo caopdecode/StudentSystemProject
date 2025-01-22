@@ -78,6 +78,22 @@ Example:
 
 - Feel free to raise any issues.
 - This project is intended to show my progress on Spring Boot learning.
+- Database Configuration
+  
+This project uses PostgreSQL to manage the database connection. To correctly test and run the project, you must ensure PostgreSQL is installed and properly configured on your system. Follow these steps:
+
+1. Install PostgreSQL from https://www.postgresql.org/download/.
+2. Update the connection credentials in the application.properties file:
+```
+spring.datasource.url=jdbc:postgresql://localhost:5432/<database_name>
+spring.datasource.username=<username>
+spring.datasource.password=<password>
+```
+3. Replace "database_name", "username", and "password" with the appropriate values for your setup.
+
+- Automatic Table Creation
+  
+The application is configured to automatically create the necessary database tables on startup, using Hibernate. Ensure the database specified in spring.datasource.url exists before running the project.
 
 
 
