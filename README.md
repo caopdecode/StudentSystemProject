@@ -93,7 +93,7 @@ spring.datasource.password=<password>
 
 - Automatic Table Creation
   
-The application is configured to automatically create the necessary database tables on startup, using Hibernate. Ensure the database specified in spring.datasource.url exists before running the project.
+The application is configured to automatically create the necessary database tables on startup, using Spring Boot JPA. Ensure the database specified in spring.datasource.url exists before running the project.
 
 
 
